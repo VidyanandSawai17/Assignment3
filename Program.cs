@@ -12,6 +12,45 @@ namespace Assignment3
         static void Main(string[] args)
         {
 
+            //Switch case using Arithmatic operation
+
+            Console.WriteLine("1. Add");
+            Console.WriteLine("2. Sub");
+            Console.WriteLine("3. Mul");
+            Console.WriteLine("4. Div");
+            Console.WriteLine("5. Mod");
+            Console.WriteLine("Select your option from 1- 5");
+            int option = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the value of A");
+            int A = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the value of B");
+            int B = Convert.ToInt32(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1:
+                    Console.WriteLine("Add =" + (A + B));
+                    break;
+                case 2:
+                    Console.WriteLine("Sub =" + (A - B));
+                    break;
+                case 3:
+                    Console.WriteLine("Mul =" + (A * B));
+                    break;
+                case 4:
+                    Console.WriteLine("Div =" + (A / B));
+                    break;
+                case 5:
+                    Console.WriteLine("Mod =" + (A % B));
+                    break;
+                default:
+                    Console.WriteLine("Wrong option select");
+                    break;
+            }
+
+
+
+
             // WAP to print numbers from 1 - 10
 
             Console.WriteLine("Enter a No");
